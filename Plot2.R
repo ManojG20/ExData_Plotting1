@@ -2,7 +2,7 @@
 classes <- c("character", "character", rep("numeric",7))
 
 #Reading Data
-data <- read.table("D:\\household_power_consumption.txt", header = TRUE, colClasses = classes, na.strings=c("?"), sep=";")
+data <- read.table("household_power_consumption.txt", header = TRUE, colClasses = classes, na.strings=c("?"), sep=";")
 
 #Subsetting Required Data
 dat <- data[data[,1] %in% c("1/2/2007", "2/2/2007"),]
